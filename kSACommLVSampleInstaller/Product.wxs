@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="kSAComm LabView Sample Package" Language="1033" Version="1.0.0.0" Manufacturer="k-Space Associates, Inc." UpgradeCode="328e9e96-2369-4043-8d0f-66ab442e1ec4">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perUser" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <Feature Id="ProductFeature" Title="kSAComm LabVIEW Sample Installer" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+
+    <UI Id="UserInterface">
+      <Property Id="WIXUI_INSTALLDIR" Value="TARGETDIR" />
+      <Property Id="WixUI_Mode" Value="Custom" />
+
+      <TextStyle Id="WixUI_Font_Normal" FaceName="Tahoma" Size="8" />
+      <TextStyle Id="WixUI_Font_Bigger" FaceName="Tahoma" Size="9" Bold="yes" />
+      <TextStyle Id="WixUI_Font_Title"  FaceName="Tahoma" Size="9" Bold="yes" />
+
+      <Property Id="DefaultUIFont" Value="WixUI_Font_Normal" />
+
+      <DialogRef Id="ProgressDlg" />
+      <DialogRef Id="ErrorDlg" />
+      <DialogRef Id="FilesInUse" />
+      <DialogRef Id="FatalError" />
+      <DialogRef Id="UserExit" />
+
+      <Publish Dialog="ExitDialog" Control="Finish" Event="EndDialog" Value="Return" Order="999">1</Publish>
+      <Publish Dialog="WelcomeDlg" Control="Next" Event="EndDialog" Value="Return" Order="2"></Publish>
+
+    </UI>
+    <UIRef Id="WixUI_Common" />
+
+    <WixVariable Id="WixUIBannerBmp" Value="ksa_top_banner.bmp" />
+    <WixVariable Id="WixUIDialogBmp" Value="ksa_background.bmp"/>
+  
+  </Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+
+      <Directory Id="PersonalFolder">
+        <Directory Id="KSAInstallFolder" Name="kSA" >
+          <Directory Id="INSTALLFOLDER" Name="kSAComm LabVIEW Interface" />
+        </Directory>
+			</Directory>
+      
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			 <Component Id="ProductComponent" Guid="{D20432C1-B65B-4665-8A73-EBF8B93D32F6}">
+         <RegistryValue Root="HKCU" Key="Software\kSpace Associates, Inc." Type="string" Value="" KeyPath="yes" />
+         <File Id="Acquire_Start_Stop_Example.vi" Name="Acquire Start Stop Example.vi" Source="..\\Acquire Start Stop Example.vi" Checksum="yes" KeyPath="no" Vital="yes" />
+         <File Id="Get_DataPoint_Example.vi" Name="Get DataPoint Example.vi" Source="..\\Get DataPoint Example.vi" Checksum="yes" KeyPath="no" Vital="yes" />
+         <File Id="kSAComm_Connect.vi" Name="kSAComm Connect.vi" Source="..\\kSAComm Connect.vi" Checksum="yes" KeyPath="no" Vital="yes" />
+         <File Id="kSAComm_Text_Command.vi" Name="kSAComm Text Command.vi" Source="..\\kSAComm Text Command.vi" Checksum="yes" KeyPath="no" Vital="yes" />
+         <File Id="kSACommLVClient.vi" Name="kSACommLVClient.vi" Source="..\\kSACommLVClient.vi" Checksum="yes" KeyPath="no" Vital="yes" />
+         <File Id="kSARegisterForData.vi" Name="kSARegisterForData.vi" Source="..\\kSARegisterForData.vi" Checksum="yes" KeyPath="no" Vital="yes" />
+         <File Id="RegisterColumnIDs.vi" Name="RegisterColumnIDs.vi" Source="..\\RegisterColumnIDs.vi" Checksum="yes" KeyPath="no" Vital="yes" />
+         <File Id="Start_Stop_Laser_Example.vi" Name="Start Stop Laser Example.vi" Source="..\\Start Stop Laser Example.vi" Checksum="yes" KeyPath="no" Vital="yes" />
+         <File Id="kSACommInterface.dll" Name="kSACommInterface.dll" Source="..\\kSACommInterface.dll" Checksum="yes" KeyPath="no" Vital="yes" />
+         <File Id="kSACommLog.config" Name="kSACommLog.config" Source="..\\kSACommLog.config" Checksum="yes" KeyPath="no" Vital="yes" />
+
+         <!-- On uninstall remove the Program Menu hierachy we created-->
+         <RemoveFolder Id="DeletekSACommLabVIEWInterfaceFolder" Directory="INSTALLFOLDER" On="uninstall" />
+         <RemoveFolder Id="DeleteKSAInstallFolder" Directory="KSAInstallFolder" On="uninstall" />
+
+       </Component> 
+		</ComponentGroup>
+	</Fragment>
+
+</Wix>

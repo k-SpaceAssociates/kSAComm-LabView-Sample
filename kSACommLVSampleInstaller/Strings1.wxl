@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+	<String Id="YOURLOCID">Your localized string</String>
+
+  <String Id="WelcomeDlgDescription">This Setup Wizard will install the kSAComm interface assembly (kSACommInterface.dll) and example LabVIEW VIs in the user's "Documents\kSA\kSAComm LabVIEW Interface folder". Click Next to continue or Cancel to exit.</String>
+  <String Id="ExitDialogDescription">The kSAComm interface assembly (kSACommInterface.dll) and example LabVIEW VIs have been installed in the user's "Documents\kSA\kSAComm LabVIEW Interface folder". Click the Finish button to exit the Setup Wizard.</String>
+</WixLocalization>
