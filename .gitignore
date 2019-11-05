@@ -4,6 +4,7 @@
 
 # Shared objects (inc. Windows DLLs)
 *.dll
+!kSACommInterface.dll
 *.so
 *.so.*
 *.dylib
