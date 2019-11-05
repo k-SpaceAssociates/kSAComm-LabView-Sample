@@ -16,3 +16,10 @@
 *.aliases
 *.lvlps
 .cache/
+
+#Wix build stuff
+bin/
+obj/
+
+#Visual Studio stuff
+*.suo
