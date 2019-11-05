@@ -6,7 +6,7 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>1a044d69-2879-4bcf-ab7c-702c8b5d9330</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>kSACommLVSampleInstaller</OutputName>
+    <OutputName>kSACommLabVIEWSampleInstaller</OutputName>
     <OutputType>Package</OutputType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
