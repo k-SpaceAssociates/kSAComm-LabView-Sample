@@ -27,7 +27,7 @@
 		<Item Name="Start Stop Laser Example.vi" Type="VI" URL="../Start Stop Laser Example.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="kSACommLabVIEWSampleInstaller" Type="Installer">
+			<Item Name="kSACommLabVIEWSampleAppwithCodeInstaller" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">kSAComm LabVIEW Sample</Property>
 				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
 				<Property Name="Destination[0].tag" Type="Str">{CD8896D9-564D-4EB2-9E5C-22DCEA53565E}</Property>
@@ -85,13 +85,13 @@
 				<Property Name="DistPartCount" Type="Int">1</Property>
 				<Property Name="INST_author" Type="Str">k-Space Associates</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../builds/kSAComm LabVIEW Sample/kSACommLabVIEWSampleInstaller</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/kSAComm LabVIEW Sample App with code/kSACommLabVIEWSampleAppwithCodeInstaller</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">kSACommLabVIEWSampleInstaller</Property>
+				<Property Name="INST_buildSpecName" Type="Str">kSACommLabVIEWSampleAppwithCodeInstaller</Property>
 				<Property Name="INST_defaultDir" Type="Str">{CD8896D9-564D-4EB2-9E5C-22DCEA53565E}</Property>
-				<Property Name="INST_installerName" Type="Str">kSACommLabVIEWSampleInstaller.exe</Property>
-				<Property Name="INST_productName" Type="Str">kSAComm LabVIEW Sample</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.10</Property>
+				<Property Name="INST_installerName" Type="Str">kSACommLabVIEWSampleAppwithCodeInstaller.exe</Property>
+				<Property Name="INST_productName" Type="Str">kSAComm LabVIEW Sample App with code</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.11</Property>
 				<Property Name="INST_readmeID" Type="Ref">/My Computer/ReadMe.rtf</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">19018000</Property>
