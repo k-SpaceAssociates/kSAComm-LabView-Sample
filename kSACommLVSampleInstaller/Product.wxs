@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" Name="kSAComm LabView Sample Package" Language="1033" Version="1.0.0.0" Manufacturer="k-Space Associates, Inc." UpgradeCode="328e9e96-2369-4043-8d0f-66ab442e1ec4">
+	<Product Id="*" Name="kSAComm LabView Sample Package" Language="1033" Version="1.0.1.0" Manufacturer="k-Space Associates, Inc." UpgradeCode="328e9e96-2369-4043-8d0f-66ab442e1ec4">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perUser" />
 
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
@@ -42,7 +42,7 @@
 
       <Directory Id="PersonalFolder">
         <Directory Id="KSAInstallFolder" Name="kSA" >
-          <Directory Id="INSTALLFOLDER" Name="kSAComm LabVIEW Interface" />
+          <Directory Id="INSTALLFOLDER" Name="kSAComm LabVIEW Sample" />
         </Directory>
 			</Directory>
       
