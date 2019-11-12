@@ -28,19 +28,23 @@
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="kSACommLabVIEWSampleAppwithCodeInstaller" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">kSAComm LabVIEW Sample</Property>
-				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
-				<Property Name="Destination[0].tag" Type="Str">{CD8896D9-564D-4EB2-9E5C-22DCEA53565E}</Property>
+				<Property Name="Destination[0].name" Type="Str">kSA</Property>
+				<Property Name="Destination[0].parent" Type="Str">{7C5E53B9-0CC8-49B4-8873-46C4C66A2706}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{9005A697-ED8B-4FA4-B801-98324EF0D7A6}</Property>
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
-				<Property Name="Destination[1].name" Type="Str">kSA</Property>
-				<Property Name="Destination[1].parent" Type="Str">{7C5E53B9-0CC8-49B4-8873-46C4C66A2706}</Property>
-				<Property Name="Destination[1].tag" Type="Str">{9005A697-ED8B-4FA4-B801-98324EF0D7A6}</Property>
+				<Property Name="Destination[1].name" Type="Str">kSAComm LabVIEW Sample</Property>
+				<Property Name="Destination[1].parent" Type="Str">{9005A697-ED8B-4FA4-B801-98324EF0D7A6}</Property>
+				<Property Name="Destination[1].tag" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
 				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
-				<Property Name="Destination[2].name" Type="Str">kSAComm LabVIEW Sample</Property>
-				<Property Name="Destination[2].parent" Type="Str">{9005A697-ED8B-4FA4-B801-98324EF0D7A6}</Property>
-				<Property Name="Destination[2].tag" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
+				<Property Name="Destination[2].name" Type="Str">kSA</Property>
+				<Property Name="Destination[2].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[2].tag" Type="Str">{74F147CD-8147-4EEC-97E5-0554442EDF9C}</Property>
 				<Property Name="Destination[2].type" Type="Str">userFolder</Property>
-				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Destination[3].name" Type="Str">LabVIEW Example</Property>
+				<Property Name="Destination[3].parent" Type="Str">{74F147CD-8147-4EEC-97E5-0554442EDF9C}</Property>
+				<Property Name="Destination[3].tag" Type="Str">{9B6A202E-C43E-4330-9AF8-7942E69D93B0}</Property>
+				<Property Name="Destination[3].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">4</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
 				<Property Name="DistPart[0].productID" Type="Str">{3D09E3EA-7B63-464F-8031-885D37270E45}</Property>
 				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2019 SP1</Property>
@@ -88,10 +92,10 @@
 				<Property Name="INST_buildLocation" Type="Path">../builds/kSAComm LabVIEW Sample App with code/kSACommLabVIEWSampleAppwithCodeInstaller</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
 				<Property Name="INST_buildSpecName" Type="Str">kSACommLabVIEWSampleAppwithCodeInstaller</Property>
-				<Property Name="INST_defaultDir" Type="Str">{CD8896D9-564D-4EB2-9E5C-22DCEA53565E}</Property>
+				<Property Name="INST_defaultDir" Type="Str">{9B6A202E-C43E-4330-9AF8-7942E69D93B0}</Property>
 				<Property Name="INST_installerName" Type="Str">kSACommLabVIEWSampleAppwithCodeInstaller.exe</Property>
 				<Property Name="INST_productName" Type="Str">kSAComm LabVIEW Sample App with code</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.11</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.18</Property>
 				<Property Name="INST_readmeID" Type="Ref">/My Computer/ReadMe.rtf</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">19018000</Property>
@@ -116,65 +120,71 @@ It will also install the kSAComm interface assembly (kSACommInterface.dll) and e
 				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
 				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
 				<Property Name="RegDestCount" Type="Int">1</Property>
-				<Property Name="Source[0].dest" Type="Str">{CD8896D9-564D-4EB2-9E5C-22DCEA53565E}</Property>
+				<Property Name="Source[0].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
 				<Property Name="Source[0].File[0].dest" Type="Str">{CD8896D9-564D-4EB2-9E5C-22DCEA53565E}</Property>
 				<Property Name="Source[0].File[0].name" Type="Str">kSACommLabVIEWClient.exe</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">kSACommLabVIEWClient</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">kSAComm LabView Sample</Property>
-				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{C2314869-ED27-485E-812E-B869C91331B8}</Property>
-				<Property Name="Source[0].FileCount" Type="Int">1</Property>
-				<Property Name="Source[0].name" Type="Str">kSACommLVClient</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/kSACommLVClient</Property>
-				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="Source[0].name" Type="Str">Acquire Start Stop Example.vi</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Acquire Start Stop Example.vi</Property>
+				<Property Name="Source[0].type" Type="Str">File</Property>
 				<Property Name="Source[1].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
-				<Property Name="Source[1].name" Type="Str">Acquire Start Stop Example.vi</Property>
-				<Property Name="Source[1].tag" Type="Ref">/My Computer/Acquire Start Stop Example.vi</Property>
+				<Property Name="Source[1].name" Type="Str">Get DataPoint Example.vi</Property>
+				<Property Name="Source[1].tag" Type="Ref">/My Computer/Get DataPoint Example.vi</Property>
 				<Property Name="Source[1].type" Type="Str">File</Property>
 				<Property Name="Source[10].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
-				<Property Name="Source[10].name" Type="Str">kSACommInterface.dll</Property>
-				<Property Name="Source[10].tag" Type="Ref">/My Computer/kSACommInterface.dll</Property>
+				<Property Name="Source[10].name" Type="Str">kSACommLog.config</Property>
+				<Property Name="Source[10].tag" Type="Ref">/My Computer/kSACommLog.config</Property>
 				<Property Name="Source[10].type" Type="Str">File</Property>
-				<Property Name="Source[11].dest" Type="Str">{CD8896D9-564D-4EB2-9E5C-22DCEA53565E}</Property>
-				<Property Name="Source[11].name" Type="Str">kSACommLog.config</Property>
-				<Property Name="Source[11].tag" Type="Ref">/My Computer/kSACommLog.config</Property>
-				<Property Name="Source[11].type" Type="Str">File</Property>
-				<Property Name="Source[12].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
+				<Property Name="Source[11].dest" Type="Str">{9B6A202E-C43E-4330-9AF8-7942E69D93B0}</Property>
+				<Property Name="Source[11].File[0].dest" Type="Str">{9B6A202E-C43E-4330-9AF8-7942E69D93B0}</Property>
+				<Property Name="Source[11].File[0].name" Type="Str">kSACommLabVIEWClient.exe</Property>
+				<Property Name="Source[11].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[11].File[0].Shortcut[0].name" Type="Str">kSACommLabVIEWClient</Property>
+				<Property Name="Source[11].File[0].Shortcut[0].subDir" Type="Str">kSAComm LabVIEW Sample App with code</Property>
+				<Property Name="Source[11].File[0].Shortcut[1].destIndex" Type="Int">1</Property>
+				<Property Name="Source[11].File[0].Shortcut[1].name" Type="Str">kSACommLabVIEWClient</Property>
+				<Property Name="Source[11].File[0].Shortcut[1].subDir" Type="Str"></Property>
+				<Property Name="Source[11].File[0].ShortcutCount" Type="Int">2</Property>
+				<Property Name="Source[11].File[0].tag" Type="Str">{C2314869-ED27-485E-812E-B869C91331B8}</Property>
+				<Property Name="Source[11].FileCount" Type="Int">1</Property>
+				<Property Name="Source[11].name" Type="Str">kSACommLVClient</Property>
+				<Property Name="Source[11].tag" Type="Ref">/My Computer/Build Specifications/kSACommLVClient</Property>
+				<Property Name="Source[11].type" Type="Str">EXE</Property>
+				<Property Name="Source[12].dest" Type="Str">{9B6A202E-C43E-4330-9AF8-7942E69D93B0}</Property>
 				<Property Name="Source[12].name" Type="Str">kSACommLog.config</Property>
 				<Property Name="Source[12].tag" Type="Ref">/My Computer/kSACommLog.config</Property>
 				<Property Name="Source[12].type" Type="Str">File</Property>
 				<Property Name="Source[2].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
-				<Property Name="Source[2].name" Type="Str">Get DataPoint Example.vi</Property>
-				<Property Name="Source[2].tag" Type="Ref">/My Computer/Get DataPoint Example.vi</Property>
+				<Property Name="Source[2].name" Type="Str">kSAComm Connect.vi</Property>
+				<Property Name="Source[2].tag" Type="Ref">/My Computer/kSAComm Connect.vi</Property>
 				<Property Name="Source[2].type" Type="Str">File</Property>
 				<Property Name="Source[3].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
-				<Property Name="Source[3].name" Type="Str">kSAComm Connect.vi</Property>
-				<Property Name="Source[3].tag" Type="Ref">/My Computer/kSAComm Connect.vi</Property>
+				<Property Name="Source[3].name" Type="Str">kSAComm Text Command.vi</Property>
+				<Property Name="Source[3].tag" Type="Ref">/My Computer/kSAComm Text Command.vi</Property>
 				<Property Name="Source[3].type" Type="Str">File</Property>
 				<Property Name="Source[4].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
-				<Property Name="Source[4].name" Type="Str">kSAComm Text Command.vi</Property>
-				<Property Name="Source[4].tag" Type="Ref">/My Computer/kSAComm Text Command.vi</Property>
+				<Property Name="Source[4].name" Type="Str">kSACommDemoLauncher.vi</Property>
+				<Property Name="Source[4].tag" Type="Ref">/My Computer/kSACommDemoLauncher.vi</Property>
 				<Property Name="Source[4].type" Type="Str">File</Property>
 				<Property Name="Source[5].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
-				<Property Name="Source[5].name" Type="Str">kSACommDemoLauncher.vi</Property>
-				<Property Name="Source[5].tag" Type="Ref">/My Computer/kSACommDemoLauncher.vi</Property>
+				<Property Name="Source[5].name" Type="Str">kSACommLVClient.vi</Property>
+				<Property Name="Source[5].tag" Type="Ref">/My Computer/kSACommLVClient.vi</Property>
 				<Property Name="Source[5].type" Type="Str">File</Property>
 				<Property Name="Source[6].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
-				<Property Name="Source[6].name" Type="Str">kSACommLVClient.vi</Property>
-				<Property Name="Source[6].tag" Type="Ref">/My Computer/kSACommLVClient.vi</Property>
+				<Property Name="Source[6].name" Type="Str">kSARegisterForData.vi</Property>
+				<Property Name="Source[6].tag" Type="Ref">/My Computer/kSARegisterForData.vi</Property>
 				<Property Name="Source[6].type" Type="Str">File</Property>
 				<Property Name="Source[7].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
-				<Property Name="Source[7].name" Type="Str">kSARegisterForData.vi</Property>
-				<Property Name="Source[7].tag" Type="Ref">/My Computer/kSARegisterForData.vi</Property>
+				<Property Name="Source[7].name" Type="Str">RegisterColumnIDs.vi</Property>
+				<Property Name="Source[7].tag" Type="Ref">/My Computer/RegisterColumnIDs.vi</Property>
 				<Property Name="Source[7].type" Type="Str">File</Property>
 				<Property Name="Source[8].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
-				<Property Name="Source[8].name" Type="Str">RegisterColumnIDs.vi</Property>
-				<Property Name="Source[8].tag" Type="Ref">/My Computer/RegisterColumnIDs.vi</Property>
+				<Property Name="Source[8].name" Type="Str">Start Stop Laser Example.vi</Property>
+				<Property Name="Source[8].tag" Type="Ref">/My Computer/Start Stop Laser Example.vi</Property>
 				<Property Name="Source[8].type" Type="Str">File</Property>
 				<Property Name="Source[9].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
-				<Property Name="Source[9].name" Type="Str">Start Stop Laser Example.vi</Property>
-				<Property Name="Source[9].tag" Type="Ref">/My Computer/Start Stop Laser Example.vi</Property>
+				<Property Name="Source[9].name" Type="Str">kSACommInterface.dll</Property>
+				<Property Name="Source[9].tag" Type="Ref">/My Computer/kSACommInterface.dll</Property>
 				<Property Name="Source[9].type" Type="Str">File</Property>
 				<Property Name="SourceCount" Type="Int">13</Property>
 			</Item>
@@ -193,7 +203,7 @@ It will also install the kSAComm interface assembly (kSACommInterface.dll) and e
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2C2A008F-6473-434B-9BE2-AB34825B0281}</Property>
-				<Property Name="Bld_version.build" Type="Int">8</Property>
+				<Property Name="Bld_version.build" Type="Int">12</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">kSACommLabVIEWClient.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/kSACommLVClient/kSACommLabVIEWClient.exe</Property>
@@ -202,8 +212,8 @@ It will also install the kSAComm interface assembly (kSACommInterface.dll) and e
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/kSACommLVClient/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/k_space_logo.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CD4C481E-F7B2-4AE0-93BE-9F039B9C3F51}</Property>
+				<Property Name="Exe_iconItemID" Type="Ref"></Property>
+				<Property Name="Source[0].itemID" Type="Str">{BBB84E72-0923-48EC-9207-EE479F84B536}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/kSACommLVClient.vi</Property>
