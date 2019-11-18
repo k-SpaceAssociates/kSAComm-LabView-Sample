@@ -25,7 +25,11 @@
 		<Item Name="ReadMe.rtf" Type="Document" URL="../ReadMe.rtf"/>
 		<Item Name="RegisterColumnIDs.vi" Type="VI" URL="../RegisterColumnIDs.vi"/>
 		<Item Name="Start Stop Laser Example.vi" Type="VI" URL="../Start Stop Laser Example.vi"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="mscorlib" Type="VI" URL="mscorlib">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="kSACommLabVIEWSampleAppwithCodeInstaller" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">kSA</Property>
@@ -95,7 +99,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{9B6A202E-C43E-4330-9AF8-7942E69D93B0}</Property>
 				<Property Name="INST_installerName" Type="Str">kSACommLabVIEWSampleAppwithCodeInstaller.exe</Property>
 				<Property Name="INST_productName" Type="Str">kSAComm LabVIEW Sample App with code</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.18</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.21</Property>
 				<Property Name="INST_readmeID" Type="Ref">/My Computer/ReadMe.rtf</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">19018000</Property>
@@ -203,7 +207,7 @@ It will also install the kSAComm interface assembly (kSACommInterface.dll) and e
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2C2A008F-6473-434B-9BE2-AB34825B0281}</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">26</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">kSACommLabVIEWClient.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/kSACommLVClient/kSACommLabVIEWClient.exe</Property>
@@ -212,8 +216,8 @@ It will also install the kSAComm interface assembly (kSACommInterface.dll) and e
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/kSACommLVClient/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_iconItemID" Type="Ref"></Property>
-				<Property Name="Source[0].itemID" Type="Str">{BBB84E72-0923-48EC-9207-EE479F84B536}</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/k_space_logo.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{8290ACEB-8DE4-4CE1-B928-B17659578844}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/kSACommLVClient.vi</Property>
