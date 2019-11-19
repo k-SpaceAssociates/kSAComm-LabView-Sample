@@ -99,7 +99,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{9B6A202E-C43E-4330-9AF8-7942E69D93B0}</Property>
 				<Property Name="INST_installerName" Type="Str">kSACommLabVIEWSampleAppwithCodeInstaller.exe</Property>
 				<Property Name="INST_productName" Type="Str">kSAComm LabVIEW Sample App with code</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.21</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.22</Property>
 				<Property Name="INST_readmeID" Type="Ref">/My Computer/ReadMe.rtf</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">19018000</Property>
@@ -207,7 +207,7 @@ It will also install the kSAComm interface assembly (kSACommInterface.dll) and e
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2C2A008F-6473-434B-9BE2-AB34825B0281}</Property>
-				<Property Name="Bld_version.build" Type="Int">26</Property>
+				<Property Name="Bld_version.build" Type="Int">28</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">kSACommLabVIEWClient.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/kSACommLVClient/kSACommLabVIEWClient.exe</Property>
