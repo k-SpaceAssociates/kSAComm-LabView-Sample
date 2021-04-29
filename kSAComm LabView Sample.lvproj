@@ -11,6 +11,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Acquire Start Stop Example.vi" Type="VI" URL="../Acquire Start Stop Example.vi"/>
+		<Item Name="FillDataTable.vi" Type="VI" URL="../FillDataTable.vi"/>
 		<Item Name="Get DataPoint Example.vi" Type="VI" URL="../Get DataPoint Example.vi"/>
 		<Item Name="k_space_logo.ico" Type="Document" URL="../k_space_logo.ico"/>
 		<Item Name="ksa_background.bmp" Type="Document" URL="../ksa_background.bmp"/>
@@ -50,8 +51,8 @@
 				<Property Name="Destination[3].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">4</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{3D09E3EA-7B63-464F-8031-885D37270E45}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2019 SP1</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{1E3C5D81-5D10-421A-AE16-1FC585D2FB7D}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2019 SP1 f3</Property>
 				<Property Name="DistPart[0].SoftDep[0].exclude" Type="Bool">false</Property>
 				<Property Name="DistPart[0].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
 				<Property Name="DistPart[0].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
@@ -99,7 +100,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{9B6A202E-C43E-4330-9AF8-7942E69D93B0}</Property>
 				<Property Name="INST_installerName" Type="Str">kSACommLabVIEWSampleAppwithCodeInstaller.exe</Property>
 				<Property Name="INST_productName" Type="Str">kSAComm LabVIEW Sample App with code</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.22</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.26</Property>
 				<Property Name="INST_readmeID" Type="Ref">/My Computer/ReadMe.rtf</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">19018000</Property>
@@ -119,7 +120,7 @@
 It will also install the kSAComm interface assembly (kSACommInterface.dll) and example LabVIEW VIs in the user's "Documents\kSA\kSAComm LabVIEW Sample".</Property>
 				<Property Name="MSI_windowTitle" Type="Str">kSAComm LabVIEW Sample Installer</Property>
 				<Property Name="MSI_winsec.certificate" Type="Str">k-Space Associates, Inc.</Property>
-				<Property Name="MSI_winsec.timestamp" Type="Str">http://timestamp.comodoca.com/authenticode</Property>
+				<Property Name="MSI_winsec.timestamp" Type="Str">http://timestamp.comodoca.com</Property>
 				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
 				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
 				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
@@ -158,6 +159,10 @@ It will also install the kSAComm interface assembly (kSACommInterface.dll) and e
 				<Property Name="Source[12].name" Type="Str">kSACommLog.config</Property>
 				<Property Name="Source[12].tag" Type="Ref">/My Computer/kSACommLog.config</Property>
 				<Property Name="Source[12].type" Type="Str">File</Property>
+				<Property Name="Source[13].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
+				<Property Name="Source[13].name" Type="Str">FillDataTable.vi</Property>
+				<Property Name="Source[13].tag" Type="Ref">/My Computer/FillDataTable.vi</Property>
+				<Property Name="Source[13].type" Type="Str">File</Property>
 				<Property Name="Source[2].dest" Type="Str">{5F5EC8E9-8280-4D66-86F0-1E8BC7EAE2D9}</Property>
 				<Property Name="Source[2].name" Type="Str">kSAComm Connect.vi</Property>
 				<Property Name="Source[2].tag" Type="Ref">/My Computer/kSAComm Connect.vi</Property>
@@ -190,7 +195,7 @@ It will also install the kSAComm interface assembly (kSACommInterface.dll) and e
 				<Property Name="Source[9].name" Type="Str">kSACommInterface.dll</Property>
 				<Property Name="Source[9].tag" Type="Ref">/My Computer/kSACommInterface.dll</Property>
 				<Property Name="Source[9].type" Type="Str">File</Property>
-				<Property Name="SourceCount" Type="Int">13</Property>
+				<Property Name="SourceCount" Type="Int">14</Property>
 			</Item>
 			<Item Name="kSACommLVClient" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
@@ -207,7 +212,7 @@ It will also install the kSAComm interface assembly (kSACommInterface.dll) and e
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2C2A008F-6473-434B-9BE2-AB34825B0281}</Property>
-				<Property Name="Bld_version.build" Type="Int">28</Property>
+				<Property Name="Bld_version.build" Type="Int">32</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">kSACommLabVIEWClient.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/kSACommLVClient/kSACommLabVIEWClient.exe</Property>
@@ -217,7 +222,7 @@ It will also install the kSAComm interface assembly (kSACommInterface.dll) and e
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/kSACommLVClient/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/k_space_logo.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{8290ACEB-8DE4-4CE1-B928-B17659578844}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7E407420-681D-4A9D-884A-1D738B71DC1E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/kSACommLVClient.vi</Property>
